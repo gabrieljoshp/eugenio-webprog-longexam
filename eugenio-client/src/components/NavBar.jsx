@@ -24,7 +24,7 @@ const NavBar = () => {
           <img
             src={logo}
             alt="BulldogEx"
-            className="h-9 w-9 rounded-full border-2 border-zinc-900 bg-zinc-50 object-contain"
+            className="h-10 w-10 rounded-full border-zinc-900 bg-zinc-50 object-contain"
           />
           <div className="space-y-0.5">
             <p className="text-xl font-bold text-white">BulldogEx Shop</p>
