@@ -1,4 +1,4 @@
-# Robles Web Programming - Long Exam 1
+# Eugenio Web Programming - Laboratory Act
 
 This repository contains a React frontend built with Vite, React Router, and Tailwind CSS.
 
@@ -80,6 +80,7 @@ npm run lint
 Open **Git Bash**, then go to the project root folder:
 
 Example
+
 ```bash
 cd /c/Users/ACER/Desktop/cy.dev/cy.dev.reactjs/course-material/webprog/long-exam1
 ```
@@ -207,6 +208,7 @@ long-exam1/
 - Product routes use the product `name` value from `product-content.js` as the URL slug.
 
 ## Enhancement Instructions
+
 - Enhancement 1: Develop an original product catalog with appropriate product names, descriptions, prices, categories, and images.
 - Enhancement 2: Create a customized footer and notfoundpage that aligns with the website theme and ensure that all links function correctly.
 - Enhancement 3: Provide accessible navigation links for both Sign In and Sign Up pages.

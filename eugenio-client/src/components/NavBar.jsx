@@ -18,7 +18,7 @@ const navLinkClassName = ({ isActive }) =>
 
 const NavBar = () => {
   return (
-    <header className="fixed inset-x-0 top-0 z-50- border-b-5 border-yellow-400 bg-blue-900/95 backdrop-blur">
+    <header className="z-150 fixed inset-x-0 top-0 z-50- border-b-5 border-yellow-400 bg-blue-900/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <NavLink to="/" className="flex items-center gap-3">
           <img

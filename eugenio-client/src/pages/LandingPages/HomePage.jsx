@@ -4,13 +4,13 @@ import banner from "../../assets/img/nu_bulldogex_banner.jpg";
 const HomePage = () => {
   return (
     <div className="flex w-full flex-col gap-6">
-      <section className="relative min-h-[28rem] overflow-hidden border-y-2 border-zinc-900 bg-zinc-900 px-4 py-10 sm:px-6 lg:px-8">
+      <section className="z-10 relative min-h-[28rem] overflow-hidden border-y-2 border-zinc-900 bg-zinc-900 px-4 py-10 sm:px-6 lg:px-8">
         <img
           src={banner}
           alt=""
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-zinc-900/45" />
+        <div className="absolute bg-zinc-900/45" />
 
         <div className="relative z-10 flex min-h-[22rem] items-start justify-end text-right sm:min-h-[24rem]">
           <div className="max-w-xl">

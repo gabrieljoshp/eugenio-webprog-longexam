@@ -1,8 +1,26 @@
-import Button from '../../components/Button.jsx';
-import ProductList from '../../components/ProductList.jsx';
-import products from '../../assets/product-content.js';
+import { useState, useEffect } from "react";
+import Button from "../../components/Button.jsx";
+import ProductList from "../../components/ProductList.jsx";
+import { fetchProducts } from "../../services/ProductService";
 
 const ProductListPage = () => {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadProducts = async () => {
+      try {
+        const { data } = await fetchProducts();
+        setProducts(Array.isArray(data) ? data : data.data || []);
+      } catch (err) {
+        console.error("Failed to fetch products:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    loadProducts();
+  }, []);
+
   return (
     <div className="flex w-full flex-col gap-6">
       <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">

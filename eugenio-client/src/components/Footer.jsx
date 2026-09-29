@@ -1,4 +1,5 @@
 import logo from "../assets/img/nubdexchange_logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,9 +15,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-400">
-          Products | Cart | Pickup
-        </p>
+        <div className="flex gap-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-400">
+          <Link to="products">Products</Link>
+          <p>{"| Cart | Pickup"}</p>
+        </div>
       </div>
     </div>
   );
